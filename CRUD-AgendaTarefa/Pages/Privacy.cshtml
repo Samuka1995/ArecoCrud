@@ -1,0 +1,18 @@
+﻿@page
+@model PrivacyModel
+@{  
+}
+<h1>["Title"]</h1>
+<form method="post">
+    <div class="form-group">
+        Titulo:  <input type="text" name="DescreveTitulo" placeholder="Insira o Título" /><br /><br />
+        Descrição:  <input type="text" name="Descrição" placeholder="Insira a Descrição" /><br /><br />
+        Data Tarefa:  <input type="date" name="Data Tarefa" placeholder="Insira a Data" /><br /><br />
+        Hora Início:  <input type="time" name="Hora Início" placeholder="Insira a Hora Início" /><br /><br />
+        Hora Fim:  <input type="time" name="Hora Fim" placeholder="Insira a Hora Fim" /><br /><br />
+        Prioridade:  <input type="text" name="Prioridade" placeholder="Insira a Prioridade" /><br /><br />
+        Tarefa Finalizada:  <input type="text" name="Tarefa Finalizada" placeholder="Insira a Tarefa Finalizada" /><br /><br />
+        <input type="submit" OnClick="OnClickSalvaTarefa" value="Salvar Tarefa" class="btn btn-primary" />
+    </div>
+</form>
+

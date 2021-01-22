@@ -1,0 +1,35 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <hr />
+        <table class="table">
+            <tr>               
+                <th>Título</th>
+                <th>Descrição</th>
+                <th>Data Tarefa</th>
+                <th>Hora Início</th>
+                <th>Hora Fim</th>
+                <th>Prioridade</th>
+                <th>Tarefa Finalizada</th>
+            </tr>
+            @foreach (var tarefas in Model.GetTarefa)
+            {
+                <tr>
+                    <td>@tarefas.IdTarefa</td>
+                    <td>@tarefas.Titulo</td>
+                    <td>@tarefas.Descricao</td>
+                    <td>@tarefas.DataTarefa</td>
+                    <td>@tarefas.HoraInicio</td>
+                    <td>@tarefas.HoraFim</td>
+                    <td>@tarefas.Prioridade</td>
+                    <td>@tarefas.TarefaFinalizada</td>
+                </tr>
+            }
+        </table> 
+</div>
+
